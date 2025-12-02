@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c55dc42ad.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Instragram photo feed</title>
+</head>
+<body>
+    <div class="main-container container-fluid">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="col-10">
+                    <a class="navbar-brand" href="#">
+                    <img src="/img/logotipo-de-instagram.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Instagram
+                    </a>
+                </div> 
+                <div class="col-2">
+                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Create new post</button>
+                    <button type="button" class="btn btn-secondary"><i class="fa-solid fa-gear"></i> <i class="fa-solid fa-caret-down"></i></button>
+                </div> 
+            </div> 
+        </nav>
+
+        <ul class="nav nav-tabs justify-content-center p-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <a href="#"><i class="fa-solid fa-grip"></i></a>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <a href="#"><i class="fa-solid fa-square"></i></a>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content justify-content-center p-5" id="myTabContent">
+
+            <!-- Primer contenido, GRID -->
+
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container text-center ig-feed">
+                    <div class="row">
+
+                        <!-- ROW 1 -->
+
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1764255908876-2d6a84dce14c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1763594393372-d0c9619d6609?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1764197944498-476aca304de5?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!-- ROW 2 -->
+
+                    <div class="row">
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1764255908876-2d6a84dce14c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1763594393372-d0c9619d6609?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1764197944498-476aca304de5?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3 -->
+
+                    <div class="row">
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1764255908876-2d6a84dce14c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1763594393372-d0c9619d6609?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                        <div class="col-4 img-grid">
+                            <a href="#"><img src="https://images.unsplash.com/photo-1764197944498-476aca304de5?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Segundo contenido, COLUMN -->
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                <!-- CARDS COLUMNS -->
+                <div class="d-flex flex-column row-gap-5">
+
+                    <!-- POST 1-->
+                    <div class="card w-50 mx-auto">
+                        <div class="d-flex flex-row justify-content-between">
+                            <h5 class="card-title p-3">Card title</h5>
+                            <p class="text-body-secondary p-3">1/3</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1764255908876-2d6a84dce14c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-post" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-body-secondary"><strong>20 Likes</strong></small></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+                    <!-- POST 2-->
+                    <div class="card w-50 mx-auto">
+                        <div class="d-flex flex-row justify-content-between">
+                            <h5 class="card-title p-3">Card title</h5>
+                            <p class="text-body-secondary p-3">1/3</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1763594393372-d0c9619d6609?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-post" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-body-secondary"><strong>20 Likes</strong></small></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+                    <!-- POST 3-->
+                    <div class="card w-50 mx-auto">
+                        <div class="d-flex flex-row justify-content-between">
+                            <h5 class="card-title p-3">Card title</h5>
+                            <p class="text-body-secondary p-3">1/3</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1764197944498-476aca304de5?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-post" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-body-secondary"><strong>20 Likes</strong></small></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- FIN DE CONTENEDORES -->
+
+
+        </div>
+    </div>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
